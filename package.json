@@ -1,0 +1,26 @@
+{
+  "name": "ali-oss-upload",
+  "version": "1.2.2",
+  "description": "upload static source to ali oss",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "prettier": "prettier --write ."
+  },
+  "author": "yangdan",
+  "license": "ISC",
+  "dependencies": {
+    "ali-oss": "^6.13.1",
+    "co": "^4.6.0",
+    "globby": "^11.0.2",
+    "slash2": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "babel-jest": "^26.6.3",
+    "fs-extra": "^9.1.0",
+    "jest": "^26.6.3",
+    "prettier": "2.2.1"
+  }
+}
