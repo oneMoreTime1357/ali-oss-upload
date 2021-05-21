@@ -1,19 +1,3 @@
-- 集团[@xes/ms-webpack-alioss-upload](https://npm.xesv5.com/#/detial?name=%40xes%2Fms-webpack-alioss-upload)地址
-- 集团 gitlab [ms-webpack-alioss-upload](https://git.100tal.com/jituan_kaifangpingtai_mofaxiao_ms/ms-webpack-alioss-upload-)地址
-
-## install
-
-安装前需要在项目中.npmrc 文件中添加如下代码
-
-```shell
-@xes:registry=http://npm.100tal.com
-```
-
-连接集团 vpn 安装
-
-```shell
-yarn add @xes/ms-webpack-alioss-upload -D
-```
 
 ## use
 
