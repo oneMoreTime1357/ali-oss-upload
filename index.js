@@ -5,7 +5,7 @@ const globby = require("globby");
 const slash = require("slash2");
 const crypto = require("crypto");
 
-class MSWebpackAliOssUpload {
+class WebpackAliOssUpload {
   constructor(options) {
     const { region, accessKeyId, accessKeySecret, bucket, test } = options;
 
@@ -55,7 +55,7 @@ class MSWebpackAliOssUpload {
 
   doWithWebpack(compiler) {
     compiler.hooks.afterEmit.tapPromise(
-      "MSWebpackAliOssUpload",
+      "WebpackAliOssUpload",
       async (compilation) => {
         if (this.configErrStr) {
           compilation.errors.push(new Error(this.configErrStr));
@@ -311,4 +311,4 @@ class MSWebpackAliOssUpload {
   }
 }
 
-module.exports = MSWebpackAliOssUpload;
+module.exports = WebpackAliOssUpload;
