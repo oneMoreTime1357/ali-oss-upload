@@ -4,7 +4,8 @@
 直接使用，上传 dist 目录静态资源
 
 ```js
-const webpackAliossUpload = require("ali-oss-upload");
+const webpackAliossUpload = require("./index");
+
 new webpackAliossUpload({
   from: ["./dist/**", "!./dist/**/*.html"],
   dist: `buket/cactory/dist`, // 上传buket的
@@ -28,7 +29,7 @@ new webpackAliossUpload({
 作为 webpack 插件使用，目前只支持 webpack >=4
 
 ```js
-const webpackAliossUpload = require("@xes/ms-webpack-alioss-upload");
+const webpackAliossUpload = require("./index");
 
 module.exports = {
   plugin: [
